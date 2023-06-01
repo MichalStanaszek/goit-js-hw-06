@@ -9,14 +9,22 @@ const ingredients = [
 
 const listOfIngredients = document.querySelector("#ingredients");
 
-for (let i = 0; i < ingredients.length; i += 1) {
+ingredients.forEach(function (ingredient, index) {
   let list = document.createElement("li");
-  list.textContent = ingredients[i];
+  list.textContent = ingredients[index];
   list.classList.add("item");
-  listOfIngredients.appendChild(list);
-}
+  listOfIngredients.append(list);
+});
 
 // // To też zadziała
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   let list = document.createElement("li");
+//   list.textContent = ingredients[i];
+//   list.classList.add("item");
+//   listOfIngredients.appendChild(list);
+// }
+
+// -----------------------------------
 // // const markup = ingredients
 // //   .map((ingredient) => `<li class="item">${ingredient}</li>`)
 // //   .join("");
