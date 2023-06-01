@@ -17,7 +17,7 @@ const markup = images
   .map(
     (image) => `<li class = "flex"><img
   src = ${image.url}
-  alt = ${image.alt}
+  alt = "${image.alt}"
   width = 400 /></li>`
   )
   .join("");
