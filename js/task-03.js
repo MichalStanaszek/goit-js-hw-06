@@ -16,7 +16,7 @@ const imagesGallery = document.querySelector(".gallery");
 const markup = images
   .map(
     (image) => `<li class = "flex"><img
-  src = ${image.url}
+  src = "${image.url}"
   alt = "${image.alt}"
   width = 400 /></li>`
   )
